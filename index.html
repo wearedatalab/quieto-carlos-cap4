@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>¡Quieto, Carlos! · Capítulo 4</title>
+<link rel="stylesheet" href="styles.css">
+<script src="scorm.js"></script>
+</head>
+<body>
+<div class="app">
+  <header class="hd">
+    <div class="crumb"><b>DATA</b>LAB <span>›</span> ¡Quieto, Carlos! <span>›</span> <strong>Cap. 4 · Una letra de diferencia</strong></div>
+    <div class="prog"><span id="pct">0%</span><div class="bar"><i id="barfill"></i></div></div>
+  </header>
+
+  <main class="stage">
+    <button class="arrow prev" id="prev" aria-label="Anterior">‹</button>
+    <div class="slides" id="slides">
+
+      <!-- 1 Video -->
+      <section class="slide" data-lock="video">
+        <div class="media"><video id="vid" controls playsinline preload="metadata" poster="media/poster.jpg"><source src="media/capitulo4.mp4" type="video/mp4"></video></div>
+        <p class="cap">Mira el capítulo completo. Al terminar, se habilitará la flecha para continuar.</p>
+      </section>
+
+      <!-- 2 Qué pasó -->
+      <section class="slide">
+        <div class="media img" style="background-image:url(media/escena.jpg)"></div>
+        <p class="cap">Carlos recibió un correo «URGENTE: actualice su cuenta de cobro hoy». Estuvo a punto de hacer clic, pero Toño lo detuvo: el remitente tenía <b>una sola letra</b> distinta.</p>
+        <div class="cmp">
+          <div class="ok"><small>Real</small><code>pagos@davivienda.com</code></div>
+          <div class="bad"><small>Falso</small><code>pagos@daviv<mark>l</mark>enda.com</code></div>
+        </div>
+      </section>
+
+      <!-- 2b Regla de oro -->
+      <section class="slide">
+        <div class="gold"><small>Regla de oro</small><p>Revisa quién escribe antes de creer lo que pide.</p></div>
+        <p class="cap">Carlos no respondió ni hizo clic: <b>llamó</b> a su contacto por el número que ya conocía y confirmó que el correo era falso.</p>
+      </section>
+
+      <!-- 3 Trucos -->
+      <section class="slide" data-lock="tricks">
+        <h2>Los 5 trucos del <b>dominio falso</b></h2>
+        <p class="sub">Toca cada truco para conocerlo.</p>
+        <div class="tabs" id="tabs"></div>
+        <div class="trick" id="trick"></div>
+      </section>
+
+      <!-- 4 Señales -->
+      <section class="slide">
+        <h2>Señales de <b>alerta</b> en el mensaje</h2>
+        <div class="signs">
+          <div><span>!</span><p>Piden <b>cambiar la cuenta bancaria</b> o los datos de pago.</p></div>
+          <div><span>!</span><p>Hay <b>urgencia</b>: «hoy antes de las 3 p. m.».</p></div>
+          <div><span>!</span><p>Piden <b>confidencialidad</b> o no avisar a nadie.</p></div>
+          <div><span>!</span><p>Traen <b>enlaces o adjuntos</b> que no esperabas.</p></div>
+        </div>
+      </section>
+
+      <!-- 5 Pasos -->
+      <section class="slide">
+        <h2>¡Quieto! <b>4 pasos</b> antes de actuar</h2>
+        <div class="steps4">
+          <div><i>1</i><b>Detente</b><p>No respondas, no hagas clic.</p></div>
+          <div><i>2</i><b>Revisa</b><p>Lee el remitente letra por letra.</p></div>
+          <div><i>3</i><b>Verifica</b><p>Llama por un canal que ya conocías, no al número del correo.</p></div>
+          <div><i>4</i><b>Reporta</b><p>Avisa por canales oficiales y guarda el correo.</p></div>
+        </div>
+      </section>
+
+      <!-- 6 Práctica -->
+      <section class="slide" data-lock="spot">
+        <h2>Práctica: encuentra la <b>letra intrusa</b></h2>
+        <p class="sub">El dominio real es <code>davivienda.com</code>. Toca el carácter que no corresponde.</p>
+        <div class="spot" id="spot"></div>
+      </section>
+
+      <!-- 7 Intro evaluación -->
+      <section class="slide">
+        <h2>Evaluación</h2>
+        <p class="cap big">Responde <b>8 preguntas</b>. Necesitas <b>80 %</b> para aprobar. Verás la retroalimentación después de cada respuesta.</p>
+      </section>
+      <!-- preguntas y resultado se insertan aquí -->
+    </div>
+    <button class="arrow next" id="next" aria-label="Siguiente">›</button>
+  </main>
+
+  <footer class="ft"><span>DATALAB</span><span id="count">1 / 1</span><span>Prevención de fraude</span></footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
